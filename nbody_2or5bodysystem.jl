@@ -139,7 +139,6 @@ ax1 = Axis3(fig[1:3,1:2])
 ax2 = Axis(fig[1,3], title="Energy")
 ax3 = Axis(fig[2,3], title="Kinetic E")
 ax4 = Axis(fig[3,3], title="Potential E")
-# init_velocities(init_params)
 
 drawx,drawy,drawz = [], [], []
 line = []
@@ -163,6 +162,8 @@ energy = Node(Point2f0[(0,init_params.Potential_Es[1]+init_params.Kinetic_Es[1])
 lines!(ax2, energy, color=:black)   
 lines!(ax3, ke)
 lines!(ax4, pe)
+
+init_velocities(init_params)
 
 function plotme()
     record(fig, "test.mp4") do io
