@@ -125,6 +125,8 @@ for i in eachindex(init_params.x_positions)
     scatter!(drawx[i], drawy[i], drawz[i], color = :black,  markersize = init_params.masses[i]*2000)
 end
 
+init_velocities(init_params)
+
 function plotme()
     record(fig, "test.gif") do io
         for i in 1:200
