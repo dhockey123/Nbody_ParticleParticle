@@ -3,7 +3,7 @@
 A collisionless particle-particle based nbody simulator which is solved using the leapfrog algorithm.
 Can be used to construct plantary or any specfic multi body systems by editing the arrays that are fed into the init_params struct.
 
-The code is only for illustrative purposes and hasn't been verified.
+The code is only for illustrative purposes and hasn't been verified, the total energy of a system is not conserved (e.g 5 body system)  
 
 # Examples
 ![2body_ekp_lossy](https://user-images.githubusercontent.com/81137805/135306535-49ca67bc-09db-43b1-b9bf-827673e0beaf.gif)
